@@ -33,5 +33,4 @@ EXPOSE 80
 RUN mv nginx.conf nginx.conf.bk && lapis new && moonc *.moon
 
 # LAPIS_OPENRESTY=/opt/openresty/nginx/sbin/nginx lapis server production
-ENTRYPOINT ["lapis"]
-CMD ["server", "production"]
+CMD ["lapis", "server", "production"]
